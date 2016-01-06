@@ -1,0 +1,63 @@
+.social {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  width: 758px;
+  font-size: 0;
+  transform: translateX(-50%);
+  
+  &__btn {
+    margin-right: 248px;
+    display: inline-block;
+    width: 87px;
+    height: 87px;
+    @include invisible-text;
+    font-size: 18px;
+    box-shadow: 0 0 0 6px $color-main-opacity;
+    transition: 0.4s;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &:hover {
+      box-shadow: 0 0 0 6px rgba($color-bg, 0.7);
+      transition: 0.4s;
+    }
+    &:active {
+      box-shadow: 0 0 0 6px rgba($color-bg, 1);
+      transition: 0.4s;
+    }
+    
+    &--twitter {
+      background: $color-social url(../img/icon-twitter.png) no-repeat 50% 50%;
+      &:hover {
+        background: $color-main url(../img/icon-twitter-hover.png) no-repeat 50% 50%;
+      }
+      &:active {
+        background: $color-main url(../img/icon-twitter-hover.png) no-repeat 50% 50%;
+      }
+      
+    }
+    
+    &--dribbble {
+      background: $color-social url(../img/icon-dribbble.png) no-repeat 50% 50%;
+      &:hover {
+        background: $color-main url(../img/icon-dribbble-hover.png) no-repeat 50% 50%
+      }
+      &:active {
+        background: $color-main url(../img/icon-dribbble-hover.png) no-repeat 50% 50%
+      }
+    }
+    
+    &--facebook {
+      background: $color-social url(../img/icon-facebook.png) no-repeat 50% 50%;
+      &:hover {
+        background: $color-main url(../img/icon-facebook-hover.png) no-repeat 50% 50%;
+      }
+      &:active {
+        background: $color-main url(../img/icon-facebook-hover.png) no-repeat 50% 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+html, 
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Roboto', Geneva, Arial, Helvetica, sans-serif;
+  color: $color-text-dark;
+  font-size: $font-size;
+  line-height: $line-height;
+  background-color: $color-bg;
+  .wrapper { 
+    margin: 0 auto;
+    width: 946px;
+  }
+  
+  a {
+    color: $color-text-light;
+    text-decoration: none;
+  }
+}

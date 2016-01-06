@@ -1,0 +1,128 @@
+.work {
+  
+  margin-bottom: 70px;
+  padding-bottom: 75px;
+  text-align: center;
+  border-bottom: 1px solid #e3e8e8;
+  
+  &__gallery {
+    @include clearfix;
+  }
+  
+  &__item {
+    position: relative;
+    margin-right: 146px;
+    margin-bottom: 55px;
+    width: 400px;
+    height: 300px;
+    @include left;
+    text-align: left;
+    transition: 0.4s;
+    overflow: hidden;
+    
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-filter;
+      opacity: 0.6;
+      transition: opacity 0.3s linear 0s;
+    }
+    
+    &:hover {
+      .work__description {
+        display: block;
+        height: 80px;
+        transform: translateY(0);
+        h3 {
+          -webkit-transform: translatey(0);
+	        transform: translatey(0);
+          -webkit-transition-delay: 0.05s;
+	        transition-delay: 0.05s;
+        }
+        p {
+          -webkit-transform: translatey(0);
+	        transform: translatey(0);
+          -webkit-transition-delay: 0.05s;
+	        transition-delay: 0.05s;
+        }
+      }
+      
+      .work__detail {
+//        display: block;
+        transform: translateY(0);
+      }
+      
+      &::before {
+        opacity: 0;
+      }
+    }
+  }
+  
+  &__detail {
+    position: absolute;
+    display: block;
+    top: 26px;
+    right: 26px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translateY(-170%);
+    transform: translateY(-170%);
+  }
+  
+  &__description {
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    padding: 15px 18px;
+    width: 100%;
+    height: 90px;
+    color: $color-text-light;
+    background-color: $color-main;
+    box-shadow: 0 -6px 0 0 $color-main-opacity;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translateY(110%);
+    transform: translateY(110%);
+    
+    h3 {
+      margin: 0;
+      font-family: 'Rokkitt', serif;
+      font-size: 29px;
+      -webkit-transition: -webkit-transform 0.48s;
+      transition: transform 0.48s;
+      -webkit-transform: translateY(250%);
+      transform: translateY(250%);
+    }
+    
+    p {
+      margin: 0;
+      color: $color-main-dark;
+      -webkit-transition: -webkit-transform 0.48s;
+      transition: transform 0.48s;
+      -webkit-transform: translateY(250%);
+      transform: translateY(250%);
+    }
+  }
+  
+  &__btn {
+    text-align: left;
+  }
+}
+
+.works {
+
+}

@@ -1,0 +1,19 @@
+.contact {
+  
+  margin-bottom: 125px;
+  font-size: 0;
+  
+  &__title {
+    margin: 0 auto 75px;;
+    width: 300px;
+    font-family: 'Rokkitt', serif;
+    font-size: 59px;
+    color: $color-main;
+  }
+  
+  &__form {
+    margin: 0 auto;
+    width: 758px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,27 @@
+.main-footer {
+  position: relative;
+  padding: 146px 0 75px;
+  font-family: 'Rokkitt', serif;
+  font-size: 20px;
+  color: $color-text-light;
+  background-color: $color-main;
+  @include clearfix
+  
+  &__design {
+    @include left;
+    width: 194px;
+    transition: 1s;
+    
+    &:hover {
+      font-size: 22px;
+      transition: 1s;
+    }
+  }
+  
+  &__company {
+    margin: 0;
+    @include right;
+    width: 146px;
+    text-align: right;
+  }
+}

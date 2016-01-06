@@ -1,0 +1,33 @@
+.btn {
+  display: inline-block;
+  padding: 14px 16px 10px;
+  width: 218px;
+  font-family: 'Rokkitt', serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: $color-main;
+  transition: 0.4s;
+  &:hover {
+    box-shadow: 0 0 0 6px $color-main-opacity;
+    transition: 0.4s;
+  }
+
+  &--detail {
+    padding: 3px;
+    width: 38px;
+    height: 38px;
+    display: none;
+    background: $color-main url(../img/icon-zoom.png) no-repeat 50% 50%;
+    @include invisible-text;
+  }
+  
+  &--view {
+    padding: 14px 26px 10px;
+    background: $color-main url(../img/icon-arrow.png) no-repeat 167px 50%;
+  }
+  
+  &--send {
+    color: $color-text-light;
+    border: none;
+  }
+}

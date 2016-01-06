@@ -1,0 +1,53 @@
+.skills {
+  margin-bottom: 75px;
+  padding-top: 95px;
+  font-size: 0;
+  border-bottom: 1px solid $color-input;
+  
+  &__title {
+    font-size: 20px;
+    color: $color-main;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__item {
+    position: relative;
+    margin-right: 11%;
+    margin-bottom: 75px;
+    display: inline-block;
+    width: 26%;
+    font-size: 15px;
+    line-height: 29px;
+    text-align: justify;
+    vertical-align: top;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: -64px;
+      left: 50%;
+      width: 64px;
+      height: 64px;
+      transform: translateX(-50%);
+    }
+    &--sketch {
+      &::before {
+        background: url(../img/icon-sketch.png) no-repeat 0;
+      }
+    }
+    &--design {
+      &::before {
+        background: url(../img/icon-design.png) no-repeat 0;
+      }
+    }
+    &--final {
+      &::before {
+        left: 55%;
+        background: url(../img/icon-final.png) no-repeat 0;
+      }
+    }
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+}

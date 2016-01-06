@@ -1,0 +1,16 @@
+.about {
+  margin-bottom: 70px;
+  text-align: center;
+  &__title {
+    font-size: 36px;
+    color: $color-main;
+    text-transform: uppercase;
+  }
+  
+  &__text {
+    margin: 0 auto;
+    width: 768px;
+    font-size: 16px;
+    line-height: 29px;
+  }
+}
